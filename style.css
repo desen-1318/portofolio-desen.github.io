@@ -1,0 +1,209 @@
+body{
+    width: 100vw;
+    height: 100%; 
+    background: linear-gradient(to right,  green, rgb(3, 72, 3), rgb(22, 36, 24)); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.kontak-absolute{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 2rem;
+
+}
+.kontak-absolute .logo-kontak{
+   height: 3rem;
+   width: 3rem;
+   padding: 5px;
+}
+.kontak-absolute .logo-kontak a img{
+    /* weight: auto; */
+   height: 3rem;
+   width: 3rem;
+}
+.container{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: red; */
+  
+}
+.container .logo{
+    color: azure;
+    font-family: system-ui;
+    font-size: larger;
+}
+.container .navbar{
+    display: flex;
+    padding: 5px;
+    width: inherit; 
+    position: fixed;
+    height: fit-content;
+    margin-top: 1rem;
+}
+.menus-navbar{
+    margin-left: auto ;
+    display: flex;
+    width: fit-content;
+}
+.menu-navbar a{
+    margin-right:3rem;
+    color: azure;
+    font-family: system-ui;
+    text-decoration: none;
+}
+.konten{
+    /* margin-top: 5rem; */
+    height: 100vh;
+    align-content: center;
+    width: 100%;
+    /* background-color: brown; */
+}
+#beranda{
+    width: 100%;
+}
+.row{
+    width: 100%;
+    display: flex;
+
+}
+.row .col-6{
+    width:50%;   
+}
+#beranda .row .col-6 .np{
+    width:100%; 
+    margin-left: auto;
+    height: fit-content;   
+    margin-top: 30%; 
+}
+#beranda .row .col-6 .hi{
+    font-size: 2.5rem;
+}
+#beranda .row .col-6 .minat-pekerjaan{
+    font-size: 4.5rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: white;
+}
+#beranda .row .col-6 .btn{
+margin-top: 2rem;
+}
+#beranda .row .col-6 .btn .btn-dcv{
+background-color: rgb(27, 62, 27);
+padding: 10px;
+width:fit-content;
+font-family: sans-serif;
+border-radius: 5px;
+color: white;
+}
+#beranda .row .col-6 .btn .btn-dcv:hover{
+    color: rgb(112, 172, 122);
+}
+#riwayat-pendidikan{
+    /* margin-top: 2rem; */
+    align-content: center;
+    text-align: center;
+}
+.label-section{
+    font-size: 2.5rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+
+}
+#riwayat-pendidikan .konten-riwayat-pendidikan{
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width: 100%;
+}
+#riwayat-pendidikan .konten-riwayat-pendidikan .card-riwayat-pendidikan {
+    /* border: 2px solid rgb(18, 34, 22); */
+    border-radius: 10px;
+    width: 20rem;
+   align-content: center;
+   justify-content: center;
+   text-align: center;
+   margin: 5px;
+   padding: 10px;
+}
+#riwayat-pendidikan .konten-riwayat-pendidikan .card-riwayat-pendidikan:hover {
+    border: 2px solid rgb(173, 193, 178);
+    background-color: rgba(93, 228, 100, 0.721);
+    box-shadow: rgba(46, 231, 33, 0.77) 0px 7px 29px 0px;
+}
+#riwayat-pendidikan .konten-riwayat-pendidikan .card-riwayat-pendidikan .gambar-card{
+   width: 15rem;    
+   height: 15rem;
+   margin-left: auto;
+   margin-right: auto;
+}
+#riwayat-pendidikan .konten-riwayat-pendidikan .card-riwayat-pendidikan .gambar-card img{
+   width: inherit;
+   height: inherit;
+}
+#riwayat-pendidikan .konten-riwayat-pendidikan .card-riwayat-pendidikan .nama-tempat-pendidikan{
+    margin-top: 1rem;
+    color: white;
+}
+#pengalaman{
+    width: 100%;
+}
+#pengalaman .konten-pengalaman{
+    width: 100%;
+}
+#pengalaman .konten-pengalaman .card-pengalaman{
+    width: fit-content;
+    padding: 5px 5px 5px 10px;
+    border :2px solid rgb(43, 77, 43);
+    border-radius: 10px;
+    background-color: green;
+}
+#pengalaman .konten-pengalaman .card-pengalaman .nama-perusahaan{
+  color: white;
+  font-family: sans-serif;
+  font-size: 25px;
+}
+#pengalaman .konten-pengalaman .card-pengalaman .deskripsi-pekerjaan{
+  color: white;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+.konten-skills{
+    width: 100%;
+    text-align: center;
+
+}
+.konten-skills .gambar-skilss{
+    width: 6rem;
+    display: inline;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    padding: 5px;
+}
+.konten-skills .gambar-skilss img{
+    width: inherit;
+    margin: 2rem;
+}
+footer{
+    text-align: center;
+    color: white;
+  font-family: sans-serif;
+  font-size: 1rem;  
+  padding: 2rem;
+  background-color: rgb(23, 47, 24);
+}
