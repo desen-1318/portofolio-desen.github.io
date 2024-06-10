@@ -114,9 +114,19 @@ font-family: sans-serif;
 border-radius: 5px;
 color: white;
 }
-/* .gambar-1 img{
-    width: initial;
-} */
+.gambar-1 img{
+    margin-left: 5rem;
+}
+.konten-tentang-saya{
+    padding: 10px;
+    width:fit-content;
+font-family: sans-serif;
+border-radius: 5px;
+color: white;
+text-align: center;
+font-size: 1.5rem;
+}
+
 #beranda .row .col-6 .btn .btn-dcv:hover{
     color: rgb(112, 172, 122);
 }
@@ -369,9 +379,27 @@ footer{
     #pengalaman .konten-pengalaman .card-pengalaman{
         width:initial;
     }
+
 }
 
-/* Gaya untuk layar berukuran besar (misalnya, laptop/desktop) */
-@media only screen and (min-width: 992px) {
-    /* Tambahkan gaya untuk laptop/desktop di sini */
+
+@media only screen and (min-width: 992px) and (max-width: 1250px) {
+    .gambar-1 {
+        width: 100%;
+        text-align: center;
+        }
+    .gambar-1 img{
+        width: 20rem;
+        margin-left: 5rem;
+        }
+        #riwayat-pendidikan .konten-riwayat-pendidikan .card-riwayat-pendidikan .gambar-card{
+            width: 13rem;    
+            height: 13rem;
+         }
+         #beranda .row .col-6 .hi{
+            font-size: 2rem;
+        }
+        #beranda .row .col-6 .minat-pekerjaan{
+            font-size: 3rem;
+        }
 }
