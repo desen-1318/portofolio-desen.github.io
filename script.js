@@ -1,5 +1,20 @@
 
 
+    var kontenItems = document.querySelectorAll('#tag');
+        
+        
+        kontenItems.forEach(function(item) {
+            window.addEventListener('scroll', function() {
+                // Cek apakah scroll telah mencapai posisi tertentu
+                if (window.scrollY > 100) { // Ubah 100 dengan posisi yang diinginkan
+                    item.classList.add('scrolled'); // Tambahkan class untuk melakukan transformasi
+                } else {
+                    item.classList.remove('scrolled'); // Hapus class jika scroll telah kembali ke posisi semula
+                }
+            });
+        });
+
+
 
 function handleScreenSize() {
     var screenWidth = window.innerWidth;
