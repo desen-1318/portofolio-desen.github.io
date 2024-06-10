@@ -1,13 +1,10 @@
-body{
-    width: 100vw;
-    height: 100%; 
+
+body{ 
     background: linear-gradient(to right,  green, rgb(3, 72, 3), rgb(22, 36, 24)); 
     background-repeat: no-repeat;
     background-size: cover;
     font-size: larger;
-    display: flex;
-    flex-direction: column;
-    
+   
 }
 
 .kontak-absolute{
@@ -15,12 +12,11 @@ body{
     right: 0;
     bottom: 0;
     margin: 2rem;
-
 }
 .kontak-absolute .logo-kontak{
    height: 3rem;
    width: 3rem;
-   padding: 5px;
+   padding: 2px;
 }
 .kontak-absolute .logo-kontak a img{
     /* weight: auto; */
@@ -47,10 +43,23 @@ body{
     height: fit-content;
     margin-top: 1rem;
 }
+.container .navbar .navbar-text-menu{
+    display: flex; 
+}
 .menus-navbar{
     margin-left: auto ;
     display: flex;
     width: fit-content;
+}
+.icon-menu-image{
+    height: 1.5rem;
+    background-color: white;
+    padding: 2px;
+    border-radius: 2px;
+    display: none;
+}
+.icon-menu-image img{
+    width: 1.5rem;
 }
 .menu-navbar a{
     margin-right:3rem;
@@ -60,9 +69,10 @@ body{
 }
 .konten{
     /* margin-top: 5rem; */
-    height: 100vh;
+    height: 100dvh;
     align-content: center;
     width: 100%;
+    justify-content: center;
     /* background-color: brown; */
 }
 #beranda{
@@ -70,12 +80,14 @@ body{
 }
 .row{
     width: 100%;
-    display: flex;
-
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
-.row .col-6{
-    width:50%;   
-}
+/* .row .col-6{
+    width:50%; 
+} */
 #beranda .row .col-6 .np{
     width:100%; 
     margin-left: auto;
@@ -102,6 +114,9 @@ font-family: sans-serif;
 border-radius: 5px;
 color: white;
 }
+/* .gambar-1 img{
+    width: initial;
+} */
 #beranda .row .col-6 .btn .btn-dcv:hover{
     color: rgb(112, 172, 122);
 }
@@ -127,6 +142,7 @@ color: white;
     justify-content: center;
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
 #riwayat-pendidikan .konten-riwayat-pendidikan .card-riwayat-pendidikan {
@@ -202,8 +218,160 @@ color: white;
 footer{
     text-align: center;
     color: white;
-  font-family: sans-serif;
-  font-size: 1rem;  
-  padding: 2rem;
-  background-color: rgb(23, 47, 24);
+    font-family: sans-serif;
+    font-size: 1rem;  
+    padding: 2rem;
+    background-color: rgb(23, 47, 24);
+}
+
+@media only screen and (max-width: 767px) {
+body{
+    background-size: cover;
+}
+
+
+.icon-menu-image{
+    display: block;
+}
+.gambar-1 img{
+width: 15rem;
+}
+.navbar{
+    width: 100%;
+}
+.container .navbar .navbar-text-menu{
+    display: none; 
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    flex-direction: column; 
+    background: linear-gradient(to right,  green, rgb(3, 72, 3), rgb(22, 36, 24)); 
+}
+.container .navbar .menus-navbar .navbar-text-menu .menu-navbar {
+    border-radius: 2px;
+    padding: 2px;
+    margin-bottom: 10px;  
+    background: linear-gradient(to right,  rgb(66, 175, 66), rgb(44, 121, 44), rgb(11, 73, 11), rgb(25, 50, 28));
+}
+.container .navbar .menus-navbar .navbar-text-menu .menu-navbar a{
+    color: rgb(212, 232, 215);
+    font-family: sans-serif;
+    font-size: 13px;
+    margin-bottom: 10px;  
+}
+footer{
+    width: 90vw;
+}
+#beranda .row .col-6 .hi{
+    font-size: 1.5rem;
+}
+#beranda .row .col-6 .minat-pekerjaan{
+    font-size: 3rem;
+}
+#riwayat-pendidikan .konten-riwayat-pendidikan .card-riwayat-pendidikan{
+    width: auto;    
+    /* height: 5rem; */
+ }
+#riwayat-pendidikan .konten-riwayat-pendidikan .card-riwayat-pendidikan .gambar-card{
+    width: 5rem;    
+    height: 5rem;
+ }
+ #riwayat-pendidikan .konten-riwayat-pendidikan .card-riwayat-pendidikan .nama-tempat-pendidikan{
+    font-size: 0.5;
+}
+.konten-skills .gambar-skilss img{
+    width: inherit;
+    margin: 1rem;
+}
+.konten-skills .gambar-skilss{
+    width: 3rem;
+   
+}
+.kontak-absolute{
+    margin: 5px;
+}
+.kontak-absolute .logo-kontak{
+    /* weight: auto; */
+   height: 2rem;
+   width: 2rem;
+}
+.kontak-absolute .logo-kontak a img{
+    /* weight: auto; */
+   height: 2rem;
+   width: 2rem;
+}
+#pengalaman .konten-pengalaman .card-pengalaman{
+    width:initial;
+}
+}
+
+/* Gaya untuk layar berukuran sedang (misalnya, tablet) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container .navbar .menus-navbar .navbar-text-menu .menu-navbar a{
+        color: rgb(212, 232, 215);
+        font-family: sans-serif;
+        font-size: 15px;   
+    }
+    .logo{
+        display: none;
+    }
+    .container .navbar .menus-navbar .navbar-text-menu .menu-navbar {
+       margin-left: 5px;
+       width: max-content;
+       /* background-color: aqua; */
+    }
+    .gambar-1 img{
+        width: 20rem;
+        }
+  
+    footer{
+        width: 90vw;
+    }
+    #beranda .row .col-6 .hi{
+        font-size: 2rem;
+    }
+    #beranda .row .col-6 .minat-pekerjaan{
+        font-size: 4rem;
+    }
+    #riwayat-pendidikan .konten-riwayat-pendidikan .card-riwayat-pendidikan{
+        width: auto;    
+        /* height: 5rem; */
+     }
+    #riwayat-pendidikan .konten-riwayat-pendidikan .card-riwayat-pendidikan .gambar-card{
+        width: 10rem;    
+        height: 10rem;
+     }
+     #riwayat-pendidikan .konten-riwayat-pendidikan .card-riwayat-pendidikan .nama-tempat-pendidikan{
+        font-size: 0.5;
+    }
+    .konten-skills .gambar-skilss img{
+        width: inherit;
+        margin: 1rem;
+    }
+    .konten-skills .gambar-skilss{
+        width: 5rem;
+       
+    }
+    .kontak-absolute{
+        margin: 5px;
+    }
+    .kontak-absolute .logo-kontak{
+        /* weight: auto; */
+       height: 2rem;
+       width: 2rem;
+    }
+    .kontak-absolute .logo-kontak a img{
+        /* weight: auto; */
+       height: 2rem;
+       width: 2rem;
+    }
+    #pengalaman .konten-pengalaman .card-pengalaman{
+        width:initial;
+    }
+}
+
+/* Gaya untuk layar berukuran besar (misalnya, laptop/desktop) */
+@media only screen and (min-width: 992px) {
+    /* Tambahkan gaya untuk laptop/desktop di sini */
 }
