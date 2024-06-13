@@ -1,6 +1,11 @@
+:root{
+    --warna-utama : linear-gradient(to right,  green, rgb(3, 72, 3), rgb(22, 36, 24)); 
+    --warna-kedua :   linear-gradient(to right,  green, rgb(3, 72, 3), rgb(22, 36, 24));   
+}
+
 
 body{ 
-    background: linear-gradient(to right,  green, rgb(3, 72, 3), rgb(22, 36, 24)); 
+    background: var(--warna-utama);
     background-repeat: no-repeat;
     background-size: cover;
     font-size: larger;
@@ -120,6 +125,10 @@ color: white;
 }
 .gambar-1 img{
     margin-left: 5rem;
+}
+.gambar-1 img:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .konten-tentang-saya{
     padding: 10px;
@@ -280,7 +289,7 @@ margin-top: 1rem;
     border-radius: 5px;
     padding: 5px;
     flex-direction: column; 
-    background: linear-gradient(to right,  green, rgb(3, 72, 3), rgb(22, 36, 24)); 
+    background: var(--warna-kedua);
 }
 .container .navbar .menus-navbar .navbar-text-menu .menu-navbar {
     border-radius: 2px;
