@@ -125,10 +125,12 @@ color: white;
 }
 .gambar-1 img{
     margin-left: 5rem;
+    border-radius: 30rem;
 }
 .gambar-1 img:hover{
+    transition: transform 0.5s ease;
     transform: scale(1.1);
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(159, 214, 157, 0.2) 0px 7px 29px 0px;
 }
 .konten-tentang-saya{
     padding: 10px;
@@ -202,6 +204,10 @@ font-size: 1.5rem;
 }
 #pengalaman .konten-pengalaman{
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 #pengalaman .konten-pengalaman .card-pengalaman{
     width: fit-content;
@@ -253,6 +259,34 @@ footer{
 }
 .scrolled {
     transform: translate(-50%, -100%);
+}
+.roadmap{
+    width: 100%;
+   text-align: center;
+   display: none;
+    position: relative;
+    padding: auto;
+    background-color: aliceblue;
+
+
+}
+.roadmap .lineroadmap{
+z-index: 3;
+width: 2px;
+background-color: black;
+height: 20rem;
+
+
+position: absolute;
+}
+.roadmap .kontenroadmap{
+
+    height: 200px;
+    width: 500px;
+    z-index: 4;
+    background: #000;
+
+    position: absolute;
 }
 
 @media only screen and (max-width: 767px) {
